@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.stopwatch {
+  text-align: center;
+}
+
+.time-display {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.milliseconds {
+  font-size: 30px;
+}
+
+.buttons {
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.laps {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.laps li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
